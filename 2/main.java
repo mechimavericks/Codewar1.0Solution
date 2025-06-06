@@ -1,7 +1,16 @@
 class Solution {
-    public void swapKth(List<Integer> arr, int k) {
-        // Swapping the k'th element from beginning and end.
-        int n = arr.size();
-        Collections.swap(arr, k - 1, n - k);
+    public double findMedian(int[] arr) {
+        // Sorting the list in ascending order
+        Arrays.sort(arr);
+
+        int n = arr.length;
+        // If the size of the list is odd
+        if (n % 2 == 1) {
+            // Median is the middle element
+            return arr[n / 2];
+        } else {
+            // Median is the average of the two middle elements
+            return (arr[n / 2] + arr[n / 2 - 1]) / 2.0;
+        }
     }
 }
