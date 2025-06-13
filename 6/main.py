@@ -9,4 +9,6 @@ class Solution:
             if arr[i] == i + 1:
                 ans.append(arr[i])  # if true, add the value to the list
         return ans  # return the list of values that are equal to their indices
+    
+    
 
