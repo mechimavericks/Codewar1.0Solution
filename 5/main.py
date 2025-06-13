@@ -19,6 +19,4 @@ class Solution:
                     if ind_p == len(pat):
                         return ind_s
             ind_s += 1
-
-        #returning -1 if string x is not found.
         return -1
